@@ -1,0 +1,52 @@
+.two {
+    margin-top: 180px;
+}
+
+
+.conteiner_two{
+    margin: auto;
+    max-width: 1600px;
+    height: 774px;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.two__titles {
+    font-size: 36px;
+    line-height: 50px;
+    width: 481px;
+    height: 100px;
+    color: black;
+
+}
+
+.paragraph {
+    width: 450px;
+    height: 120px;
+    font-family: Mulish;
+    font-weight: 300px;
+    font-size: 17px;
+    line-height: 30px;
+
+
+}
+
+.two__texts {
+    margin-right: 90px;
+}
+
+
+.two__button__text {
+    width: 164px;
+    height: 48px;
+    border: 0;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.two__images {
+    width: 600px;
+    height: auto;
+}

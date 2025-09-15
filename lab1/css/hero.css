@@ -1,0 +1,63 @@
+.hero__holidayfinder  {
+    background-image: url("../images/thousand-01.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 46%;
+}
+
+
+
+.hero__title {
+    font-size: 64px;
+    line-height: 80px;
+    width: 356px;
+    height: 160px;
+    color:#202336;
+}
+
+
+.hero__select {
+    background: #fff;
+    width: 220px;
+    height: 52px;
+    border-color:#AFB0B9;
+    margin: 10px;    
+    -webkit-appearance: none; 
+    border: 1px solid #ccc;
+    padding: 5px 25px;
+    color: #4A4C53;
+    font-size: 15px;
+
+}
+
+.hero__select__wrapper {
+    margin-top: 20px;
+}
+
+.hero__holidayfinder__button {
+    width: 180px;
+    height: 52px;
+    border-radius: 8px;
+    border: 0;
+    margin-top: 35px;
+    margin-left: 10px;
+    font-size: 17px;
+}
+
+.hero__title__holidayfinder {
+    width: 149;
+    height: 27;
+    font-weight: 600px;
+    font-size: 22px;
+    margin-left: 10px;
+    color: #202336;
+}
+
+.hero__line {
+    width: 32px;
+    height: 1px;
+    border-radius: 3px;
+    background-color: black;
+    margin-left: 1%;
+}
+

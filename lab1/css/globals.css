@@ -1,0 +1,34 @@
+body {
+    font-family: "Inter", "Arial", sans-serif;
+    color: #7D7987;
+}
+
+.conteiner {
+    margin: 0 auto;
+    max-width: 1219px;
+}
+
+a {
+    text-decoration: none;
+    color: #B8BECD;
+}
+
+li {
+    display: block;
+}
+
+button {
+    color:#fff;
+    background: #FB8F1D;
+    border-radius: 8px;
+}
+
+h1 {
+    font-family: Playfair Display;
+    font-weight: 700;
+}
+
+hr {
+    width: 1219px;
+    color: #c4c4c4
+}

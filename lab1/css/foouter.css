@@ -1,0 +1,37 @@
+.foouter__conteiner {
+    height: 115px;
+    background-color:#f8f8f8;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.foouter_logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1219px;
+}
+
+.circle {
+    width: 12px;        
+    height: 12px;       
+    background-color: #FB8F1D;
+    border: 3px solid white;
+    box-shadow: 0 0 0 7px #1ABE84;
+    border-radius: 50%;
+}
+
+.social__media {
+    display: flex;
+    justify-content: center;
+}
+
+.social__media__items {
+    width: auto;
+    height: 20px;
+    margin: 11px;
+
+}
