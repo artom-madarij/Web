@@ -1,56 +1,72 @@
-.hero__holidayfinder  {
+.hero__holidayfinder {
     background-image: url("../images/thousand-01.png");
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: 46%;
+    padding: 0 20px;
+    height: auto;
 }
-
-
 
 .hero__title {
     font-size: 64px;
     line-height: 80px;
     width: 356px;
-    height: 160px;
-    color:#202336;
+    height: 210px;
+    color: #202336;
 }
-
 
 .hero__select {
     background: #fff;
-    width: 220px;
+    width: 100%;
     height: 52px;
-    border-color:#AFB0B9;
-    margin: 10px;    
-    -webkit-appearance: none; 
+    border-color: #AFB0B9;
+    margin-top: 10px;
+    margin-left: 10px;
+    -webkit-appearance: none;
     border: 1px solid #ccc;
     padding: 5px 25px;
     color: #4A4C53;
-    font-size: 15px;
-
+    font-size: 0.8rem;
+    border-radius: 0.5vw;
+    background-image: url('../images/arrow-dow.png');
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    background-size: 10px;
 }
 
 .hero__select__wrapper {
-    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    width: 100%;
+    max-width: 430px;
 }
 
 .hero__holidayfinder__button {
     width: 180px;
     height: 52px;
-    border-radius: 8px;
     border: 0;
     margin-top: 35px;
     margin-left: 10px;
     font-size: 17px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero__holidayfinder__button:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
 }
 
 .hero__title__holidayfinder {
-    width: 149;
-    height: 27;
-    font-weight: 600px;
+    width: 549px;
+    font-weight: 600;
     font-size: 22px;
     margin-left: 10px;
     color: #202336;
+}
+
+.hero__inner {
+    padding-top: 80px;
 }
 
 .hero__line {
@@ -58,6 +74,126 @@
     height: 1px;
     border-radius: 3px;
     background-color: black;
-    margin-left: 1%;
+    margin: 1% 0 3% 1%;
 }
 
+@media screen and (max-width: 1100px) {
+    .hero__holidayfinder {
+        background-position: right center;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .hero__holidayfinder {
+        background-position: top center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-size: 290px;
+        justify-content: end;
+        padding: 1rem;
+        height: 600px;
+    }
+    .hero__line {
+        margin: 0 auto;
+    }
+    .hero__inner {
+        padding-top: 1rem;
+    }
+    .hero__title {
+        font-size: 1.5rem;
+        width: 100%;
+        height: auto;
+        line-height: 20px;
+    }
+    .hero__title__holidayfinder {
+        font-size: 1rem;
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+    .hero__select__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+        justify-items: center;
+    }
+    .hero__select {
+        width: 100%;
+        font-size: 0.7rem;
+        border-radius: 8px;
+    }
+    .hero__holidayfinder__button {
+        width: 50%;
+        font-size: 1rem;
+        margin: 1rem auto 0 auto;
+    }
+}
+
+@media screen and (min-width: 1460px) {
+    .hero__holidayfinder {
+        background-size: 40vw;
+        background-position: right bottom;
+        max-width: 1600px;
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+    .hero__inner {
+        padding-top: 80px;
+    }
+    .hero__title {
+        font-size: 72px;
+        line-height: 88px;
+        width: 420px;
+    }
+    .hero__title__holidayfinder {
+        font-size: 28px;
+        width: 600px;
+    }
+    .hero__select__wrapper {
+        max-width: 500px;
+        gap: 1.5rem;
+    }
+    .hero__select {
+        font-size: 1vw;
+        height: 3.7vw;
+    }
+    .hero__holidayfinder__button {
+        width: 200px;
+        height: 60px;
+        font-size: 18px;
+    }
+    .hero__line {
+        width: 40px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .hero__holidayfinder {
+        background-size: 42%;
+        max-width: 1900px;
+
+    }
+    .hero__title {
+        font-size: 90px;
+        line-height: 96px;
+        width: 620px;
+    }
+    .hero__select{
+        background-size: 15px;
+    }
+    .hero__title__holidayfinder {
+        font-size: 42px;
+        width: 650px;
+    }
+    .hero__select {
+        width: 300px;
+    }
+    .hero__holidayfinder__button {
+        width: 250px;
+        height: 80px;
+        font-size: 21px;
+        border-radius: 0.5vw;
+    }
+}

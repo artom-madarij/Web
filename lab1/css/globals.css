@@ -5,7 +5,7 @@ body {
 
 .conteiner {
     margin: 0 auto;
-    max-width: 1219px;
+    max-width: 90%;
 }
 
 a {
@@ -29,6 +29,6 @@ h1 {
 }
 
 hr {
-    width: 1219px;
+    width: 81%;
     color: #c4c4c4
 }
