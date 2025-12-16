@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>View Lamps</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h2>My Lamps</h2>
+    <div class="search">
+        <input type="text" id="searchInput" placeholder="Search">
+        <button id="searchBtn">Search</button>
+        <button id="clearBtn">Clear</button>
+    </div>
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <h3>Manage Lamps</h3>
+            <label>
+            Sort by Price max-min
+            <input type="checkbox" id="sortToggle">
+            </label>
+            <br>
+            <label>
+            Sort by Price min-max
+            <input type="checkbox" id="sortToggl">
+            </label>
+            <br><br>
+            <button id="countBtn">Total Price</button>
+            <div class="total" id="totalPower">Total price: $0</div>
+        </div>
+
+        <div class="content" id="lampList"></div>
+    </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
