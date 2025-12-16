@@ -1,0 +1,57 @@
+import React from 'react';
+import { Provider } from 'react-redux';
+import { Routes, Route } from 'react-router-dom';
+import Header from './components/Header/Header';
+import Hero from './components/Hero/Hero';
+import ProductGrid from './components/ProductGrid/ProductGrid'; 
+import Catalog from './components/Catalog/Catalog';
+import Item from './components/Item/Item';
+import Cart from './components/Cart/Cart';
+import Footer from './components/Footer/Footer';
+import CheckoutPage from './pages/CheckoutPage'; 
+import SuccessPage from './pages/SuccessPage';
+import Login from './pages/Login/Login';
+import Register from './pages/Register/Register';
+import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute';
+
+import { store } from './store';
+import './App.css';
+
+function App() {
+  return (
+    <Provider store={store}>
+      <div className="App">
+        <Header />
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          
+          <Route element={<ProtectedRoute />}>
+            <Route path="/" element={
+              <>
+                <Hero />
+                <ProductGrid />
+              </>
+            } />
+            <Route path="/catalog" element={<Catalog />} />
+            <Route path="/item/:id" element={<Item />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/checkout" element={<CheckoutPage />} />
+            <Route path="/success" element={<SuccessPage />} />
+            <Route path="/home" element={
+              <>
+                <Hero />
+                <ProductGrid />
+              </>
+            } />
+          </Route>
+          
+          <Route path="*" element={<Login />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Provider>
+  );
+}
+
+export default App;
