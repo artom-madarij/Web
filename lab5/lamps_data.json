@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "type": "LED Ceiling",
+    "manufacturer": "Philips",
+    "power": 18,
+    "ledCount": 4,
+    "price": 40
+  },
+  {
+    "id": 2,
+    "type": "Desk Lamp",
+    "manufacturer": "IKEA",
+    "power": 12,
+    "ledCount": 2,
+    "price": 30
+  },
+  {
+    "id": 3,
+    "type": "Floor Lamp",
+    "power": 25,
+    "ledCount": 6,
+    "manufacturer": "Osram",
+    "price": 80
+  },
+  {
+    "id": 4,
+    "type": "Pendant Lamp",
+    "manufacturer": "Xiaomi",
+    "power": 20,
+    "ledCount": 3,
+    "price": 600
+  },
+  {
+    "id": 5,
+    "type": "а",
+    "manufacturer": "аві",
+    "power": 3,
+    "ledCount": 6,
+    "price": 8
+  }
+]

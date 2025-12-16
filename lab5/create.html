@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Lamp</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h2>Create Lamp</h2>
+    <nav>
+      <a href="index.html">View Lamps</a>
+      <a href="create.html">Create Lamp</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="sidebar">
+      <h3>Add New Lamp</h3>
+      <form id="createForm">
+        <label>Type: <input type="text" id="type" required></label>
+        <label>Manufacturer: <input type="text" id="manufacturer" required></label>
+        <label>Power (W): <input type="number" id="power" required></label>
+        <label>LED Count: <input type="number" id="ledCount" required></label>
+        <label>Price ($): <input type="number" id="price" required></label>
+        <button type="submit">Save</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

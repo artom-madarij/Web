@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit Lamp</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h2>Edit Lamp</h2>
+    <nav>
+      <a href="index.html">View Lamps</a>
+      <a href="create.html">Create Lamp</a>
+    </nav>
+  </header>
+
+  <div class="container">
+  <form id="editForm">
+    <label>Type: <input type="text" id="type" required></label>
+    <label>Manufacturer: <input type="text" id="manufacturer" required></label>
+    <label>Power (W): <input type="number" id="power" required></label>
+    <label>LED Count: <input type="number" id="ledCount" required></label>
+    <label>Price ($): <input type="number" id="price" required></label>
+    <input type="hidden" id="lampId">
+    <button type="submit">Update Lamp</button>
+  </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
