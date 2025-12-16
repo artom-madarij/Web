@@ -1,0 +1,7 @@
+@import './style/globals.css';
+
+@import './components/Header/Header.css';
+@import './components/Hero/Hero.css';
+@import './components/ProductGrid/ProductGrid.css';
+@import './components/ProductTile/ProductTile.css';
+@import './components/Footer/Footer.css';
